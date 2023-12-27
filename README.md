@@ -24,6 +24,7 @@ This repository aims to provide a variety of templates to help you kickstart you
 #### Choose the template that best fits your project requirements.
 
 - [barebones](https://github.com/hs-wolf/nx-monorepo-templates/tree/barebones): A simple barebones monorepo with no additional apps or libs.
+- [express-api](https://github.com/hs-wolf/nx-monorepo-templates/tree/express-api): Monorepo containing a node express app configured with Tsoa and Swagger.
 
 ## Getting Started
 
