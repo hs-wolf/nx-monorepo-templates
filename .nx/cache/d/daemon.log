@@ -72,3 +72,11 @@
 [NX Daemon Server] - 2023-12-27T20:55:44.516Z - [REQUEST]: .vscode/settings.json
 [NX Daemon Server] - 2023-12-27T20:55:44.516Z - [REQUEST]: 
 [NX Daemon Server] - 2023-12-27T20:55:44.526Z - Time taken for 'hash changed files from watcher' 0.10857400298118591ms
+[NX Daemon Server] - 2023-12-27T20:58:35.679Z - [WATCHER]: package.json was modified
+[NX Daemon Server] - 2023-12-27T20:58:35.679Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-27T20:58:39.090Z - [WATCHER]: _tmp_86994_a1e3ca717ab4daa97667049adb61ce6d was deleted
+[NX Daemon Server] - 2023-12-27T20:58:39.090Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-27T20:58:39.932Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-27T20:58:39.937Z - [WATCHER]: Stopping the watcher for /home/unohisagi/Repositories/hs-wolf/nx-monorepo-templates (sources)
+[NX Daemon Server] - 2023-12-27T20:58:39.937Z - [WATCHER]: Stopping the watcher for /home/unohisagi/Repositories/hs-wolf/nx-monorepo-templates (outputs)
+[NX Daemon Server] - 2023-12-27T20:58:39.937Z - Server stopped because: "Lock file changed"

@@ -5,7 +5,6 @@
   "scripts": {},
   "private": true,
   "devDependencies": {
-    "@nx/express": "17.2.7",
     "@nx/workspace": "17.2.7",
     "nx": "17.2.7"
   }
