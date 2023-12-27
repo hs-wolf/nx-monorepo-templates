@@ -1,0 +1,74 @@
+[NX Daemon Server] - 2023-12-27T20:54:22.660Z - Started listening on: /tmp/efdce6264f9ffbb6f0bd/d.sock
+[NX Daemon Server] - 2023-12-27T20:54:22.661Z - [WATCHER]: Subscribed to changes within: /home/unohisagi/Repositories/hs-wolf/nx-monorepo-templates (native)
+[NX Daemon Server] - 2023-12-27T20:54:22.662Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-12-27T20:54:22.663Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-12-27T20:54:22.665Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-12-27T20:54:22.666Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-27T20:54:22.666Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-27T20:54:22.666Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-27T20:54:22.866Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-12-27T20:54:22.867Z - Time taken for 'total for creating and serializing project graph' 200.58389799669385ms
+[NX Daemon Server] - 2023-12-27T20:54:22.867Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-12-27T20:54:22.867Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-12-27T20:54:22.867Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 201. Response time: 1.
+[NX Daemon Server] - 2023-12-27T20:54:22.870Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-12-27T20:54:22.871Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-12-27T20:54:22.872Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-12-27T20:54:22.872Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-12-27T20:54:22.873Z - [REQUEST]: Responding to the client. handleRequestFileData
+[NX Daemon Server] - 2023-12-27T20:54:22.873Z - Done responding to the client handleRequestFileData
+[NX Daemon Server] - 2023-12-27T20:54:22.873Z - Handled REQUEST_FILE_DATA. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2023-12-27T20:54:59.005Z - [WATCHER]: .vscode/extensions.json was modified
+[NX Daemon Server] - 2023-12-27T20:54:59.005Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-27T20:54:59.106Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-27T20:54:59.106Z - [REQUEST]: .vscode/extensions.json
+[NX Daemon Server] - 2023-12-27T20:54:59.106Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-27T20:54:59.119Z - Time taken for 'hash changed files from watcher' 0.09168199822306633ms
+[NX Daemon Server] - 2023-12-27T20:55:01.901Z - [WATCHER]: .vscode/extensions.json was modified
+[NX Daemon Server] - 2023-12-27T20:55:01.901Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-27T20:55:02.054Z - [WATCHER]: .vscode/extensions.json was modified
+[NX Daemon Server] - 2023-12-27T20:55:02.054Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-27T20:55:02.101Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-27T20:55:02.101Z - [REQUEST]: .vscode/extensions.json
+[NX Daemon Server] - 2023-12-27T20:55:02.101Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-27T20:55:02.112Z - Time taken for 'hash changed files from watcher' 0.09315500035881996ms
+[NX Daemon Server] - 2023-12-27T20:55:15.272Z - [WATCHER]: .vscode/settings.json was created or restored
+[NX Daemon Server] - 2023-12-27T20:55:15.272Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-27T20:55:15.373Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-27T20:55:15.373Z - [REQUEST]: .vscode/settings.json
+[NX Daemon Server] - 2023-12-27T20:55:15.373Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-27T20:55:15.385Z - Time taken for 'hash changed files from watcher' 0.08278600126504898ms
+[NX Daemon Server] - 2023-12-27T20:55:19.724Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-27T20:55:19.724Z - [WATCHER]: .vscode/settings.json was modified
+[NX Daemon Server] - 2023-12-27T20:55:19.925Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-27T20:55:19.925Z - [REQUEST]: .vscode/settings.json
+[NX Daemon Server] - 2023-12-27T20:55:19.925Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-27T20:55:19.936Z - Time taken for 'hash changed files from watcher' 0.08681399747729301ms
+[NX Daemon Server] - 2023-12-27T20:55:20.675Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-27T20:55:20.675Z - [WATCHER]: .vscode/settings.json was modified
+[NX Daemon Server] - 2023-12-27T20:55:21.076Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-27T20:55:21.076Z - [REQUEST]: .vscode/settings.json
+[NX Daemon Server] - 2023-12-27T20:55:21.076Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-27T20:55:21.094Z - Time taken for 'hash changed files from watcher' 0.08916699886322021ms
+[NX Daemon Server] - 2023-12-27T20:55:25.567Z - [WATCHER]: .vscode/settings.json was modified
+[NX Daemon Server] - 2023-12-27T20:55:25.567Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-27T20:55:26.368Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-27T20:55:26.368Z - [REQUEST]: .vscode/settings.json
+[NX Daemon Server] - 2023-12-27T20:55:26.368Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-27T20:55:26.379Z - Time taken for 'hash changed files from watcher' 0.09485799819231033ms
+[NX Daemon Server] - 2023-12-27T20:55:39.619Z - [WATCHER]: .vscode/extensions.json was modified
+[NX Daemon Server] - 2023-12-27T20:55:39.619Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-27T20:55:40.993Z - [WATCHER]: .vscode/settings.json was modified
+[NX Daemon Server] - 2023-12-27T20:55:40.993Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-27T20:55:41.220Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-27T20:55:41.220Z - [REQUEST]: .vscode/extensions.json,.vscode/settings.json
+[NX Daemon Server] - 2023-12-27T20:55:41.220Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-27T20:55:41.238Z - Time taken for 'hash changed files from watcher' 0.15624500066041946ms
+[NX Daemon Server] - 2023-12-27T20:55:41.314Z - [WATCHER]: .vscode/settings.json was modified
+[NX Daemon Server] - 2023-12-27T20:55:41.314Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-27T20:55:42.184Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-27T20:55:42.185Z - [WATCHER]: .vscode/settings.json was modified
+[NX Daemon Server] - 2023-12-27T20:55:44.516Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-27T20:55:44.516Z - [REQUEST]: .vscode/settings.json
+[NX Daemon Server] - 2023-12-27T20:55:44.516Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-27T20:55:44.526Z - Time taken for 'hash changed files from watcher' 0.10857400298118591ms
