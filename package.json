@@ -1,11 +1,11 @@
 {
-  "name": "@nx-monorepo-templates/source",
-  "version": "0.0.0",
+  "private": true,
+  "name": "@nx-monorepo-templates/express-api",
+  "version": "0.0.1",
   "license": "MIT",
   "scripts": {},
-  "private": true,
   "devDependencies": {
-    "@nx/express": "17.2.7",
+    "@nx/node": "17.2.7",
     "@nx/workspace": "17.2.7",
     "nx": "17.2.7"
   }

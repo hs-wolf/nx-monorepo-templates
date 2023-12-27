@@ -5,7 +5,7 @@ settings:
   excludeLinksFromLockfile: false
 
 devDependencies:
-  '@nx/express':
+  '@nx/node':
     specifier: 17.2.7
     version: 17.2.7(@types/node@20.10.5)(nx@17.2.7)(typescript@5.3.3)
   '@nx/workspace':
@@ -1553,29 +1553,6 @@ packages:
       - nx
     dev: true
 
-  /@nrwl/express@17.2.7(@types/node@20.10.5)(nx@17.2.7)(typescript@5.3.3):
-    resolution: {integrity: sha512-q6QXzXKTETe+neW1+D6nNzcUP20nyOINXiG2H4cI6MHckmn6P2UFe7cLThRU1d+upCL3ftqsnpqEdxCVRZEWwQ==}
-    dependencies:
-      '@nx/express': 17.2.7(@types/node@20.10.5)(nx@17.2.7)(typescript@5.3.3)
-    transitivePeerDependencies:
-      - '@babel/traverse'
-      - '@swc-node/register'
-      - '@swc/core'
-      - '@swc/wasm'
-      - '@types/node'
-      - babel-plugin-macros
-      - debug
-      - eslint
-      - express
-      - js-yaml
-      - node-notifier
-      - nx
-      - supports-color
-      - ts-node
-      - typescript
-      - verdaccio
-    dev: true
-
   /@nrwl/jest@17.2.7(@types/node@20.10.5)(nx@17.2.7)(typescript@5.3.3):
     resolution: {integrity: sha512-jYeBQbS9iaybLxmxFv6N9qftRHyRpG3YlDxiHXXmWPX0OrgDjNSY3QCCReM8iqADk2TaxoIw1WDKp4tKzft2xA==}
     dependencies:
@@ -1714,36 +1691,6 @@ packages:
       - debug
       - nx
       - supports-color
-      - verdaccio
-    dev: true
-
-  /@nx/express@17.2.7(@types/node@20.10.5)(nx@17.2.7)(typescript@5.3.3):
-    resolution: {integrity: sha512-mKnTv0X+FmkC3l0Ufpj4wGdX2NLOwjnj0OQ92WfcT28N1RbH99otPCor0CziXM7fRyToSshCR61DAHKr9yYDuA==}
-    peerDependencies:
-      express: ^4.18.1
-    peerDependenciesMeta:
-      express:
-        optional: true
-    dependencies:
-      '@nrwl/express': 17.2.7(@types/node@20.10.5)(nx@17.2.7)(typescript@5.3.3)
-      '@nx/devkit': 17.2.7(nx@17.2.7)
-      '@nx/node': 17.2.7(@types/node@20.10.5)(nx@17.2.7)(typescript@5.3.3)
-      tslib: 2.6.2
-    transitivePeerDependencies:
-      - '@babel/traverse'
-      - '@swc-node/register'
-      - '@swc/core'
-      - '@swc/wasm'
-      - '@types/node'
-      - babel-plugin-macros
-      - debug
-      - eslint
-      - js-yaml
-      - node-notifier
-      - nx
-      - supports-color
-      - ts-node
-      - typescript
       - verdaccio
     dev: true
 
