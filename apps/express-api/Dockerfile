@@ -12,7 +12,7 @@ ENV PORT=3000
 WORKDIR /app
 
 RUN addgroup --system express-api && \
-          adduser --system -G express-api express-api
+    adduser --system -G express-api express-api
 
 COPY dist/apps/express-api express-api
 RUN chown -R express-api:express-api .

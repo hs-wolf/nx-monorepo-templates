@@ -2,7 +2,9 @@
   "compileOnSave": false,
   "compilerOptions": {
     "target": "ES6",
-    "lib": ["ES2023"],
+    "lib": [
+      "ES2023"
+    ],
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "baseUrl": ".",
@@ -16,5 +18,8 @@
     "skipDefaultLibCheck": true,
     "skipLibCheck": true
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
 }

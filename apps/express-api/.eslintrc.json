@@ -1,10 +1,21 @@
 {
-  "extends": ["../../.eslintrc.json"],
-  "ignorePatterns": ["!**/*"],
+  "extends": [
+    "../../.eslintrc.json"
+  ],
+  "ignorePatterns": [
+    "!**/*"
+  ],
   "overrides": [
     {
-      "extends": ["airbnb-base"],
-      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "extends": [
+        "airbnb-base"
+      ],
+      "files": [
+        "*.ts",
+        "*.tsx",
+        "*.js",
+        "*.jsx"
+      ],
       "rules": {}
     }
   ]
