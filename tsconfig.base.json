@@ -3,20 +3,20 @@
   "compilerOptions": {
     "target": "ES6",
     "lib": [
-      "ES2023"
+      "ES2020"
     ],
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "baseUrl": ".",
-    "module": "Node16",
+    "module": "ESNext",
     "paths": {},
     "rootDir": ".",
-    "moduleResolution": "Node16",
+    "moduleResolution": "Node10",
     "declaration": false,
     "importHelpers": true,
-    "sourceMap": false,
+    "sourceMap": true,
     "skipDefaultLibCheck": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
   },
   "exclude": [
     "node_modules",

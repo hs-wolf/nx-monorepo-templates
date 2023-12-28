@@ -5,12 +5,12 @@
   "compilerOptions": {
     "resolveJsonModule": true,
     "types": [
-      "node"
+      "node", "express"
     ],
     "outDir": "../../dist/out-tsc",
-    "esModuleInterop": true
+    "esModuleInterop": true,
   },
   "include": [
-    "src/**/*.ts"
+    "src/**/*.ts",
   ]
 }

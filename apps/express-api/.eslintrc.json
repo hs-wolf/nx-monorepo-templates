@@ -7,9 +7,6 @@
   ],
   "overrides": [
     {
-      "extends": [
-        "airbnb-base"
-      ],
       "files": [
         "*.ts",
         "*.tsx",

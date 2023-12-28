@@ -1,0 +1,14 @@
+{
+  "entryFile": "apps/express-api/src/app.ts",
+  "noImplicitAdditionalProperties": "silently-remove-extras",
+  "controllerPathGlobs": [
+    "apps/express-api/src/**/*Controller.ts"
+  ],
+  "spec": {
+    "outputDirectory": "apps/express-api/generated/spec",
+    "specVersion": 3
+  },
+  "routes": {
+    "routesDir": "apps/express-api/generated/routes"
+  }
+}

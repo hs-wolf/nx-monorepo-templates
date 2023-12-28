@@ -16,23 +16,25 @@
         "format": [
           "esm"
         ],
-        "bundle": false,
+        "bundle": true,
         "main": "apps/express-api/src/main.ts",
         "tsConfig": "apps/express-api/tsconfig.json",
         "assets": [
           "apps/express-api/src/assets"
         ],
-        "generatePackageJson": true,
-        "esbuildOptions": {
-          "sourcemap": true,
-          "outExtension": {
-            ".js": ".js"
-          }
-        }
+        "generatePackageJson": true
       },
       "configurations": {
-        "development": {},
+        "development": {
+          "esbuildOptions": {
+            "sourcemap": true,
+            "outExtension": {
+              ".js": ".js"
+            }
+          }
+        },
         "production": {
+          "minify": true,
           "generateLockfile": true,
           "esbuildOptions": {
             "sourcemap": false,
@@ -69,6 +71,18 @@
         "build"
       ],
       "command": "docker build -f apps/express-api/Dockerfile . -t express-api"
+    },
+    "build-tsoa": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "tsoa spec-and-routes -c=apps/express-api/tsoa.json"
+      }
+    },
+    "watch-tsoa": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "nodemon --config apps/express-api/nodemon.json -x tsoa spec-and-routes -c=apps/express-api/tsoa.json"
+      }
     }
   },
   "tags": []
