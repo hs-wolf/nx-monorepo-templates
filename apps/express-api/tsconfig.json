@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "types": ["node"],
+    "outDir": "../../dist/out-tsc",
+    "esModuleInterop": true
+  },
+  "include": ["src/**/*.ts"]
+}
