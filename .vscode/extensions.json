@@ -2,5 +2,6 @@
   "recommendations": [
     "nrwl.angular-console",
     "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode"
   ]
 }

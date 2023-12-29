@@ -1,20 +1,11 @@
-export interface User {
-    id: number;
-    email: string;
-    name: string;
-    status?: 'Happy' | 'Sad';
-    phoneNumbers: string[];
-  }
+import { User } from '@nx-monorepo-templates/models'
 
-export type UserCreationParams = Pick<User, 'email' | 'name' | 'phoneNumbers'>;
+export type UserCreationParams = Pick<User, 'name'>;
 
 export class UsersService {
   private user: User = {
     id: 12345,
-    email: 'jane@doe.com',
     name: 'Jane Doe',
-    status: 'Happy',
-    phoneNumbers: [],
   };
 
   public get(id: number, name?: string): User {
@@ -30,7 +21,6 @@ export class UsersService {
   public create(userCreationParams: UserCreationParams): User {
     if (userCreationParams) {
       this.user.id = Math.floor(Math.random() * 10000);
-      this.user.status = 'Happy';
     }
     return this.user;
   }

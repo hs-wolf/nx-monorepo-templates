@@ -12,60 +12,31 @@
 						"type": "number",
 						"format": "double"
 					},
-					"email": {
-						"type": "string"
-					},
 					"name": {
 						"type": "string"
-					},
-					"status": {
-						"type": "string",
-						"enum": [
-							"Happy",
-							"Sad"
-						]
-					},
-					"phoneNumbers": {
-						"items": {
-							"type": "string"
-						},
-						"type": "array"
 					}
 				},
 				"required": [
 					"id",
-					"email",
-					"name",
-					"phoneNumbers"
+					"name"
 				],
 				"type": "object",
 				"additionalProperties": false
 			},
-			"Pick_User.email-or-name-or-phoneNumbers_": {
+			"Pick_User.name_": {
 				"properties": {
-					"email": {
-						"type": "string"
-					},
 					"name": {
 						"type": "string"
-					},
-					"phoneNumbers": {
-						"items": {
-							"type": "string"
-						},
-						"type": "array"
 					}
 				},
 				"required": [
-					"email",
-					"name",
-					"phoneNumbers"
+					"name"
 				],
 				"type": "object",
 				"description": "From T, pick a set of properties whose keys are in the union K"
 			},
 			"UserCreationParams": {
-				"$ref": "#/components/schemas/Pick_User.email-or-name-or-phoneNumbers_"
+				"$ref": "#/components/schemas/Pick_User.name_"
 			}
 		},
 		"securitySchemes": {}

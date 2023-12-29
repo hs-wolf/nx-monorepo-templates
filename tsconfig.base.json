@@ -2,24 +2,21 @@
   "compileOnSave": false,
   "compilerOptions": {
     "target": "ES6",
-    "lib": [
-      "ES2020"
-    ],
+    "lib": ["ES2020"],
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "baseUrl": ".",
     "module": "ESNext",
-    "paths": {},
+    "paths": {
+      "@nx-monorepo-templates/models": ["libs/models/src/index.ts"]
+    },
     "rootDir": ".",
     "moduleResolution": "Node10",
     "declaration": false,
     "importHelpers": true,
     "sourceMap": true,
     "skipDefaultLibCheck": true,
-    "skipLibCheck": true,
+    "skipLibCheck": true
   },
-  "exclude": [
-    "node_modules",
-    "tmp"
-  ]
+  "exclude": ["node_modules", "tmp"]
 }

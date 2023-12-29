@@ -1,3 +1,4 @@
+import { User } from '@nx-monorepo-templates/models';
 import {
   Body,
   Controller,
@@ -8,7 +9,7 @@ import {
   Route,
   SuccessResponse,
 } from 'tsoa';
-import { UsersService, UserCreationParams, User } from '../services/UsersService';
+import { UsersService, UserCreationParams } from '../services/UsersService';
 
 @Route('users')
 export class UsersController extends Controller {

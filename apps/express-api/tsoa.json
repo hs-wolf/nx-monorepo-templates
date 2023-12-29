@@ -10,5 +10,10 @@
   },
   "routes": {
     "routesDir": "apps/express-api/generated/routes"
+  },
+  "compilerOptions": {
+    "paths": {
+      "@nx-monorepo-templates/models": ["libs/models/src/index.ts"]
+    }
   }
 }
