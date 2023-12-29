@@ -2,7 +2,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "target": "ES6",
-    "lib": ["ES2020"],
+    "lib": ["ES2020", "DOM"],
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "baseUrl": ".",
@@ -10,11 +10,13 @@
     "paths": {
       "@nx-monorepo-templates/models": ["libs/models/src/index.ts"]
     },
+    "resolveJsonModule": true,
     "rootDir": ".",
     "moduleResolution": "Node10",
     "declaration": false,
     "importHelpers": true,
     "sourceMap": true,
+    "esModuleInterop": true,
     "skipDefaultLibCheck": true,
     "skipLibCheck": true
   },

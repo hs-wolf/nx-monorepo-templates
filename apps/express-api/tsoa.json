@@ -1,5 +1,5 @@
 {
-  "entryFile": "apps/express-api/src/app.ts",
+  "entryFile": "apps/express-api/src/main.ts",
   "noImplicitAdditionalProperties": "silently-remove-extras",
   "controllerPathGlobs": [
     "apps/express-api/src/**/*Controller.ts"

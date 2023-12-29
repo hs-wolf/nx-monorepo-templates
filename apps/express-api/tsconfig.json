@@ -3,12 +3,10 @@
     "../../tsconfig.base.json"
   ],
   "compilerOptions": {
-    "resolveJsonModule": true,
     "types": [
       "node", "express"
     ],
-    "outDir": "../../dist/out-tsc",
-    "esModuleInterop": true,
+    "outDir": "../../dist",
   },
   "include": [
     "src/**/*.ts",

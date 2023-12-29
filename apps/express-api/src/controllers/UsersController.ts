@@ -1,32 +1,24 @@
+import { Inject } from 'typescript-ioc';
 import { User } from '@nx-monorepo-templates/models';
 import {
-  Body,
   Controller,
   Get,
   Path,
-  Post,
-  Query,
   Route,
-  SuccessResponse,
 } from 'tsoa';
-import { UsersService, UserCreationParams } from '../services/UsersService';
+import { UsersService } from '../services/UsersService';
 
 @Route('users')
 export class UsersController extends Controller {
-  private userService = new UsersService();
+  @Inject
+  _userService: UsersService;
 
   @Get('{userId}')
-  public async getUser(
-      @Path() userId: number,
-      @Query() name?: string,
-  ): Promise<User> {
-    return this.userService.get(userId, name);
-  }
-
-  @SuccessResponse('201', 'Created') // Custom success response
-  @Post()
-  public async createUser(@Body() requestBody: UserCreationParams): Promise<void> {
-    this.setStatus(201);
-    this.userService.create(requestBody);
+  public async getUser(@Path() userId: number): Promise<User> {
+    try {
+      return this._userService.getUser(userId);
+    } catch (error) {
+     console.log(error) 
+    }
   }
 }
