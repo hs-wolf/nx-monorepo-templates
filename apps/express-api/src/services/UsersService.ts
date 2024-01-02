@@ -5,7 +5,7 @@ import { apiErrorHandler } from '../util';
 export class UsersService {
   private readonly usersRepo = new UsersRepositoryPlaceholderDB();
 
-  async createUser(params: UserCreateParams): Promise<User | null> {
+  async createUser(params: UserCreateParams): Promise<User> {
     try {
       return this.usersRepo.createUser(params);
     } catch (error) {
@@ -14,7 +14,7 @@ export class UsersService {
     }
   }
 
-  async getUser(userId: string): Promise<User | null> {
+  async getUser(userId: string): Promise<User> {
     try {
       return this.usersRepo.getUser(userId);
     } catch (error) {

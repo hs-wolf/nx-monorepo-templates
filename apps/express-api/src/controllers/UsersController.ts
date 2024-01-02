@@ -1,6 +1,7 @@
 import {
   Body,
   Controller,
+  Delete,
   Get,
   Path,
   Post,
@@ -17,12 +18,12 @@ export class UsersController extends Controller {
   private readonly usersService = new UsersService();
 
   @Post('/')
-  public async createUser(@Body() params: UserCreateParams): Promise<User | null> {
+  public async createUser(@Body() params: UserCreateParams): Promise<User> {
     return this.usersService.createUser(params);
   }
 
   @Get('{userId}')
-  public async getUser(@Path() userId: string): Promise<User | null> {
+  public async getUser(@Path() userId: string): Promise<User> {
     return this.usersService.getUser(userId);
   }
 
@@ -31,7 +32,7 @@ export class UsersController extends Controller {
     return this.usersService.updateUser(userId, params);
   }
 
-  @Get('{userId}')
+  @Delete('{userId}')
   public async deleteUser(@Path() userId: string): Promise<void> {
     return this.usersService.deleteUser(userId);
   }
