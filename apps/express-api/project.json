@@ -6,42 +6,35 @@
   "targets": {
     "build": {
       "executor": "@nx/esbuild:esbuild",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
         "platform": "node",
         "outputPath": "dist/apps/express-api",
-        "format": [
-          "esm"
-        ],
+        "format": ["cjs"],
         "bundle": true,
-        "main": "apps/express-api/src/main.ts",
-        "tsConfig": "apps/express-api/tsconfig.json",
-        "assets": [
-          "apps/express-api/src/assets"
-        ],
-        "generatePackageJson": true
+        "main": "apps/express-api/src/server.ts",
+        "tsConfig": "apps/express-api/tsconfig.app.json",
+        "assets": ["apps/express-api/src/assets"],
+        "generatePackageJson": true,
+        "esbuildOptions": {
+          "sourcemap": true,
+          "outExtension": {
+            ".js": ".js"
+          }
+        }
       },
       "configurations": {
-        "development": {
-          "esbuildOptions": {
-            "sourcemap": true,
-            "outExtension": {
-              ".js": ".js"
-            }
-          }
-        },
+        "development": {},
         "production": {
-          "minify": true,
           "generateLockfile": true,
           "esbuildOptions": {
             "sourcemap": false,
             "outExtension": {
               ".js": ".js"
             }
-          }
+          },
+          "minify": true
         }
       }
     },
@@ -62,14 +55,10 @@
     },
     "lint": {
       "executor": "@nx/eslint:lint",
-      "outputs": [
-        "{options.outputFile}"
-      ]
+      "outputs": ["{options.outputFile}"]
     },
     "docker-build": {
-      "dependsOn": [
-        "build"
-      ],
+      "dependsOn": ["build"],
       "command": "docker build -f apps/express-api/Dockerfile . -t express-api"
     },
     "build-tsoa": {

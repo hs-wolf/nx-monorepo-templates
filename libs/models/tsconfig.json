@@ -1,15 +1,13 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitOverride": true,
-    "noImplicitReturns": true,
-    "noPropertyAccessFromIndexSignature": true,
-    "strict": true,
-    "types": ["node"],
-    "declaration": true,
-    "outDir": "../../dist/out-tsc",
-    "forceConsistentCasingInFileNames": true,
+    "module": "commonjs"
   },
-  "include": ["src/**/*.ts"]
+  "files": [],
+  "include": [],
+  "references": [
+    {
+      "path": "./tsconfig.lib.json"
+    }
+  ]
 }

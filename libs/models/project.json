@@ -9,7 +9,7 @@
       "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/libs/models",
-        "tsConfig": "libs/models/tsconfig.json",
+        "tsConfig": "libs/models/tsconfig.lib.json",
         "packageJson": "libs/models/package.json",
         "main": "libs/models/src/index.ts"
       }

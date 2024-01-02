@@ -1,24 +1,38 @@
-import { Inject } from 'typescript-ioc';
-import { User } from '@nx-monorepo-templates/models';
 import {
+  Body,
   Controller,
   Get,
   Path,
+  Post,
+  Put,
   Route,
+  Tags
 } from 'tsoa';
-import { UsersService } from '../services/UsersService';
+import { User, UserCreateParams, UserUpdateParams } from '@nx-monorepo-templates/models';
+import { UsersService } from '../services';
 
+@Tags('Users')
 @Route('users')
 export class UsersController extends Controller {
-  @Inject
-  _userService: UsersService;
+  private readonly usersService = new UsersService();
+
+  @Post('/')
+  public async createUser(@Body() params: UserCreateParams): Promise<User | null> {
+    return this.usersService.createUser(params);
+  }
 
   @Get('{userId}')
-  public async getUser(@Path() userId: number): Promise<User> {
-    try {
-      return this._userService.getUser(userId);
-    } catch (error) {
-     console.log(error) 
-    }
+  public async getUser(@Path() userId: string): Promise<User | null> {
+    return this.usersService.getUser(userId);
+  }
+
+  @Put('{userId}')
+  public async updateUser(@Path() userId: string, @Body() params: UserUpdateParams): Promise<void> {
+    return this.usersService.updateUser(userId, params);
+  }
+
+  @Get('{userId}')
+  public async deleteUser(@Path() userId: string): Promise<void> {
+    return this.usersService.deleteUser(userId);
   }
 }
