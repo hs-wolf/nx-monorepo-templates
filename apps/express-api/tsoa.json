@@ -13,7 +13,9 @@
   },
   "compilerOptions": {
     "paths": {
-      "@nx-monorepo-templates/models": ["libs/models/src/index.ts"]
+      "@nx-monorepo-templates/models": [
+        "libs/models/src/index.ts"
+      ]
     }
   }
 }

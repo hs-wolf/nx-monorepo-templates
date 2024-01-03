@@ -15,7 +15,7 @@ export class UsersRepositoryPlaceholderDB implements IUsersRepository {
     return newUser;
   }
 
-  async updateUser(userId:string, params: UserUpdateParams) {
+  async updateUser(userId: string, params: UserUpdateParams) {
     // eslint-disable-next-line no-console
     console.log(`Updated ${userId} with params ${params}`);
   }

@@ -1,5 +1,8 @@
 {
   "exec": "ts-node apps/express-api/src/main.ts",
-  "watch": ["apps/express-api/src", "libs/models"],
+  "watch": [
+    "apps/express-api/src",
+    "libs/models"
+  ],
   "ext": "ts"
 }

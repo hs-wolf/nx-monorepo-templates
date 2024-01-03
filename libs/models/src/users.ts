@@ -4,7 +4,7 @@ export class User {
     public username: string,
     public creationDate: Date,
     public lastUpdateDate: Date
-  ) {}
+  ) { }
 
   static fromMap(map: Record<string, unknown>) {
     return !map
@@ -29,4 +29,4 @@ export class User {
 
 export type UserCreateParams = Pick<User, 'id' | 'username' | 'creationDate' | 'lastUpdateDate'>;
 
-export type UserUpdateParams = Pick<User, 'username'>;
+export type UserUpdateParams = Pick<User, 'username' | 'lastUpdateDate'>;
