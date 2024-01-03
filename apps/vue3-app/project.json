@@ -1,0 +1,65 @@
+{
+  "name": "vue3-app",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/vue3-app/src",
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": [
+        "{options.outputFile}"
+      ]
+    },
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/vue3-app",
+        "skipTypeCheck": true
+      },
+      "configurations": {
+        "development": {
+          "mode": "development"
+        },
+        "production": {
+          "mode": "production"
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nx/vite:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "vue3-app:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "vue3-app:build:development",
+          "hmr": true
+        },
+        "production": {
+          "buildTarget": "vue3-app:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "preview": {
+      "executor": "@nx/vite:preview-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "vue3-app:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "vue3-app:build:development"
+        },
+        "production": {
+          "buildTarget": "vue3-app:build:production"
+        }
+      }
+    }
+  }
+}
