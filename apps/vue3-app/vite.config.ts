@@ -16,6 +16,7 @@ export default defineConfig({
   plugins: [vue(), nxViteTsPaths()],
   build: {
     outDir: '../../dist/apps/vue3-app',
+    emptyOutDir: true,
     reportCompressedSize: true,
     commonjsOptions: {
       transformMixedEsModules: true,
