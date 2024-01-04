@@ -33,7 +33,7 @@ devDependencies:
     version: 17.2.7(@types/node@18.7.1)(eslint@8.48.0)(nx@17.2.7)
   '@nx/eslint-plugin':
     specifier: 17.2.7
-    version: 17.2.7(@types/node@18.7.1)(@typescript-eslint/parser@6.9.1)(eslint@8.48.0)(nx@17.2.7)(typescript@5.2.2)
+    version: 17.2.7(@types/node@18.7.1)(@typescript-eslint/parser@6.9.1)(eslint-config-prettier@9.1.0)(eslint@8.48.0)(nx@17.2.7)(typescript@5.2.2)
   '@nx/js':
     specifier: 17.2.7
     version: 17.2.7(@types/node@18.7.1)(nx@17.2.7)(typescript@5.2.2)
@@ -70,6 +70,9 @@ devDependencies:
   eslint-config-eslint:
     specifier: 9.0.0
     version: 9.0.0(eslint@8.48.0)
+  eslint-config-prettier:
+    specifier: 9.1.0
+    version: 9.1.0(eslint@8.48.0)
   eslint-plugin-import:
     specifier: 2.29.1
     version: 2.29.1(@typescript-eslint/parser@6.9.1)(eslint@8.48.0)
@@ -79,6 +82,9 @@ devDependencies:
   nx:
     specifier: 17.2.7
     version: 17.2.7
+  prettier:
+    specifier: 3.1.1
+    version: 3.1.1
   ts-node:
     specifier: 10.9.2
     version: 10.9.2(@types/node@18.7.1)(typescript@5.2.2)
@@ -1928,10 +1934,10 @@ packages:
       - verdaccio
     dev: true
 
-  /@nrwl/eslint-plugin-nx@17.2.7(@types/node@18.7.1)(@typescript-eslint/parser@6.9.1)(eslint@8.48.0)(nx@17.2.7)(typescript@5.2.2):
+  /@nrwl/eslint-plugin-nx@17.2.7(@types/node@18.7.1)(@typescript-eslint/parser@6.9.1)(eslint-config-prettier@9.1.0)(eslint@8.48.0)(nx@17.2.7)(typescript@5.2.2):
     resolution: {integrity: sha512-YGH3FL4Dz+a9r2xmZx/SMUFOUl/An6IsZeTqkG5gC+ErejX9nT1KWOXMNh5bkl+jz0b4NvkiVvgQw+W4q2K9sg==}
     dependencies:
-      '@nx/eslint-plugin': 17.2.7(@types/node@18.7.1)(@typescript-eslint/parser@6.9.1)(eslint@8.48.0)(nx@17.2.7)(typescript@5.2.2)
+      '@nx/eslint-plugin': 17.2.7(@types/node@18.7.1)(@typescript-eslint/parser@6.9.1)(eslint-config-prettier@9.1.0)(eslint@8.48.0)(nx@17.2.7)(typescript@5.2.2)
     transitivePeerDependencies:
       - '@babel/traverse'
       - '@swc-node/register'
@@ -2074,7 +2080,7 @@ packages:
       - verdaccio
     dev: true
 
-  /@nx/eslint-plugin@17.2.7(@types/node@18.7.1)(@typescript-eslint/parser@6.9.1)(eslint@8.48.0)(nx@17.2.7)(typescript@5.2.2):
+  /@nx/eslint-plugin@17.2.7(@types/node@18.7.1)(@typescript-eslint/parser@6.9.1)(eslint-config-prettier@9.1.0)(eslint@8.48.0)(nx@17.2.7)(typescript@5.2.2):
     resolution: {integrity: sha512-emKsCaWDOPekCJvuE6QE6CHwSR4RKULdOHotnSaE3J65cgair9djsR8SNUELsqpTSfEmtfB53Z0oZYw4zdeiFQ==}
     peerDependencies:
       '@typescript-eslint/parser': ^6.9.1
@@ -2083,7 +2089,7 @@ packages:
       eslint-config-prettier:
         optional: true
     dependencies:
-      '@nrwl/eslint-plugin-nx': 17.2.7(@types/node@18.7.1)(@typescript-eslint/parser@6.9.1)(eslint@8.48.0)(nx@17.2.7)(typescript@5.2.2)
+      '@nrwl/eslint-plugin-nx': 17.2.7(@types/node@18.7.1)(@typescript-eslint/parser@6.9.1)(eslint-config-prettier@9.1.0)(eslint@8.48.0)(nx@17.2.7)(typescript@5.2.2)
       '@nx/devkit': 17.2.7(nx@17.2.7)
       '@nx/js': 17.2.7(@types/node@18.7.1)(nx@17.2.7)(typescript@5.2.2)
       '@typescript-eslint/parser': 6.9.1(eslint@8.48.0)(typescript@5.2.2)
@@ -2091,6 +2097,7 @@ packages:
       '@typescript-eslint/utils': 6.16.0(eslint@8.48.0)(typescript@5.2.2)
       chalk: 4.1.2
       confusing-browser-globals: 1.0.11
+      eslint-config-prettier: 9.1.0(eslint@8.48.0)
       jsonc-eslint-parser: 2.4.0
       semver: 7.5.3
       tslib: 2.3.0
@@ -3842,6 +3849,15 @@ packages:
     transitivePeerDependencies:
       - eslint
       - supports-color
+    dev: true
+
+  /eslint-config-prettier@9.1.0(eslint@8.48.0):
+    resolution: {integrity: sha512-NSWl5BFQWEPi1j4TjVNItzYV7dZXZ+wP6I6ZhrBGpChQhZRUaElihE9uRRkcbRnNb76UMKDF3r+WTmNcGPKsqw==}
+    hasBin: true
+    peerDependencies:
+      eslint: '>=7.0.0'
+    dependencies:
+      eslint: 8.48.0
     dev: true
 
   /eslint-import-resolver-node@0.3.9:
@@ -5873,6 +5889,12 @@ packages:
   /prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
+    dev: true
+
+  /prettier@3.1.1:
+    resolution: {integrity: sha512-22UbSzg8luF4UuZtzgiUOfcGM8s4tjBv6dJRT7j275NXsy2jb4aJa4NNveul5x4eqlF1wuhuR2RElK71RvmVaw==}
+    engines: {node: '>=14'}
+    hasBin: true
     dev: true
 
   /pretty-format@29.7.0:
