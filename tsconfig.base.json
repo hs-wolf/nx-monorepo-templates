@@ -10,21 +10,13 @@
     "importHelpers": true,
     "target": "ES2022",
     "module": "CommonJS",
-    "lib": [
-      "ES2022",
-      "DOM"
-    ],
+    "lib": ["ES2022", "DOM"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx-monorepo-templates/models": [
-        "libs/models/src/index.ts"
-      ]
+      "@nx-monorepo-templates/models": ["libs/models/src/index.ts"]
     }
   },
-  "exclude": [
-    "node_modules",
-    "tmp"
-  ]
+  "exclude": ["node_modules", "tmp"]
 }

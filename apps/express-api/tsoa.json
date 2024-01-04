@@ -1,9 +1,7 @@
 {
   "entryFile": "apps/express-api/src/app.ts",
   "noImplicitAdditionalProperties": "silently-remove-extras",
-  "controllerPathGlobs": [
-    "apps/express-api/src/controllers/*Controller.ts"
-  ],
+  "controllerPathGlobs": ["apps/express-api/src/controllers/*Controller.ts"],
   "spec": {
     "outputDirectory": "apps/express-api/generated/spec",
     "specVersion": 3
@@ -13,9 +11,7 @@
   },
   "compilerOptions": {
     "paths": {
-      "@nx-monorepo-templates/models": [
-        "libs/models/src/index.ts"
-      ]
+      "@nx-monorepo-templates/models": ["libs/models/src/index.ts"]
     }
   }
 }

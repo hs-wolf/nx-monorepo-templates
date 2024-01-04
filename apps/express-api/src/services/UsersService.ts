@@ -1,4 +1,8 @@
-import { User, UserCreateParams, UserUpdateParams } from '@nx-monorepo-templates/models';
+import {
+  User,
+  UserCreateParams,
+  UserUpdateParams,
+} from '@nx-monorepo-templates/models';
 import { UsersRepositoryPlaceholderDB } from '../repos';
 import { apiErrorHandler } from '../util';
 

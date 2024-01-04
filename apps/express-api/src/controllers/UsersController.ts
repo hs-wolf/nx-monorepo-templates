@@ -7,9 +7,13 @@ import {
   Post,
   Put,
   Route,
-  Tags
+  Tags,
 } from 'tsoa';
-import { User, UserCreateParams, UserUpdateParams } from '@nx-monorepo-templates/models';
+import {
+  User,
+  UserCreateParams,
+  UserUpdateParams,
+} from '@nx-monorepo-templates/models';
 import { UsersService } from '../services';
 
 @Tags('Users')
@@ -28,7 +32,10 @@ export class UsersController extends Controller {
   }
 
   @Put('{userId}')
-  public async updateUser(@Path() userId: string, @Body() params: UserUpdateParams): Promise<void> {
+  public async updateUser(
+    @Path() userId: string,
+    @Body() params: UserUpdateParams,
+  ): Promise<void> {
     return this.usersService.updateUser(userId, params);
   }
 

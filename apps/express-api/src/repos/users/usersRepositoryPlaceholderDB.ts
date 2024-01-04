@@ -1,5 +1,9 @@
 /* eslint-disable class-methods-use-this */
-import { User, UserCreateParams, UserUpdateParams } from '@nx-monorepo-templates/models';
+import {
+  User,
+  UserCreateParams,
+  UserUpdateParams,
+} from '@nx-monorepo-templates/models';
 import type { IUsersRepository } from './IUsersRepository';
 
 export class UsersRepositoryPlaceholderDB implements IUsersRepository {
