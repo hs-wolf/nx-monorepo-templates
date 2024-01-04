@@ -25,6 +25,7 @@ This repository aims to provide a variety of templates to help you kickstart you
 
 - [barebones](https://github.com/hs-wolf/nx-monorepo-templates/tree/barebones): A simple barebones monorepo with no additional apps or libs.
 - [express-api](https://github.com/hs-wolf/nx-monorepo-templates/tree/express-api): Monorepo containing a node express app configured with Tsoa and Swagger.
+- [vue3-app](https://github.com/hs-wolf/nx-monorepo-templates/tree/vue3-app): A Vue3 app with all basic necessities included like routing and state management.
 
 ## Getting Started
 
