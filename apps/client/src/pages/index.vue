@@ -1,8 +1,11 @@
 <template>
-  <div>
-    <h2>Available Modules</h2>
+  <div class="flex flex-col items-center">
+    <h1 class="font-bold">Available Modules</h1>
     <div>
-      <h3>Pinia Stores {{ key }}</h3>
+      <p>Pinia</p>
+    </div>
+    <div>
+      <p>Tailwind</p>
     </div>
   </div>
 </template>
@@ -11,7 +14,6 @@
 import { useAlertStore } from "~/stores";
 
 const alertStore = useAlertStore();
-const { key } = storeToRefs(alertStore);
 
 onMounted(() => {
   alertStore.handleWarning({ message: "oof" });

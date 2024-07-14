@@ -5,6 +5,7 @@
   "scripts": {},
   "private": true,
   "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.12.1",
     "@nx/workspace": "19.4.3",
     "nx": "19.4.3",
     "sass": "^1.77.8"
