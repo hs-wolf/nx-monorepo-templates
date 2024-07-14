@@ -1,0 +1,28 @@
+{
+  "name": "client",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/client/src",
+  "projectType": "application",
+  "targets": {
+    "postinstall": {
+      "command": "nuxt prepare ./apps/client"
+    },
+    "dev": {
+      "command": "nuxt dev ./apps/client"
+    },
+    "build": {
+      "command": "nuxt build ./apps/client"
+    },
+    "generate": {
+      "command": "nuxt generate ./apps/client && rm -rf ./apps/client/dist"
+    },
+    "preview": {
+      "dependsOn": ["build"],
+      "command": "nuxt preview ./dist/apps/client"
+    },
+    "preview:static": {
+      "dependsOn": ["generate"],
+      "command": "nuxt preview ./dist/apps/client"
+    }
+  }
+}
