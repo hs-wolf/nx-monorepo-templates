@@ -7,6 +7,9 @@
     <div>
       <p>Tailwind</p>
     </div>
+    <div>
+      <p>Vueuse</p>
+    </div>
   </div>
 </template>
 
@@ -14,6 +17,8 @@
 import { useAlertStore } from "~/stores";
 
 const alertStore = useAlertStore();
+
+useHead({ title: "Home" });
 
 onMounted(() => {
   alertStore.handleWarning({ message: "oof" });
