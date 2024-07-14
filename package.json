@@ -11,6 +11,7 @@
     "sass": "^1.77.8"
   },
   "dependencies": {
+    "@nuxtjs/i18n": "^8.3.1",
     "@pinia/nuxt": "^0.5.1",
     "@vueuse/core": "^10.11.0",
     "@vueuse/nuxt": "^10.11.0",

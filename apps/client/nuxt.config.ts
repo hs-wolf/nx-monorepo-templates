@@ -39,8 +39,37 @@ export default defineNuxtConfig({
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     },
   },
-  modules: ["@pinia/nuxt", "@nuxtjs/tailwindcss", "@vueuse/nuxt"],
+  modules: [
+    "@pinia/nuxt",
+    "@nuxtjs/tailwindcss",
+    "@vueuse/nuxt",
+    "@nuxtjs/i18n",
+  ],
   tailwindcss: {
     viewer: false,
+  },
+  i18n: {
+    locales: [
+      {
+        name: "English",
+        code: "en",
+        iso: "en-US",
+        file: "en.yaml",
+      },
+      {
+        name: "Português",
+        code: "pt",
+        iso: "pt-BR",
+        file: "pt.yaml",
+      },
+    ],
+    defaultLocale: "en",
+    langDir: "locales",
+    lazy: true,
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: "i18n_redirected",
+      redirectOn: "root",
+    },
   },
 });
