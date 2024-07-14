@@ -1,0 +1,1 @@
+export const ALERTS_STORE_ID = 'ALERTS_STORE_ID';
