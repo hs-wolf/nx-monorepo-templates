@@ -13,12 +13,12 @@
     <div class="flex items-center gap-2">
       <p>i18n</p>
       <a
+        v-for="l in availableLocales"
+        :key="l.code"
         href="#"
-        v-for="locale in availableLocales"
-        :key="locale.code"
-        @click.prevent="setLocale(locale.code)"
+        @click.prevent="setLocale(l.code)"
       >
-        {{ locale.name }}
+        {{ l.name }}
       </a>
     </div>
     <div class="flex flex-col items-center">

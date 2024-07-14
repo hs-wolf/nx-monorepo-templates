@@ -4,6 +4,12 @@
   "sourceRoot": "apps/client/src",
   "projectType": "application",
   "targets": {
+    "lint": {
+      "command": "eslint --config ./apps/client/eslint.config.mjs ./apps/client"
+    },
+    "lint:fix": {
+      "command": "eslint --config ./apps/client/eslint.config.mjs ./apps/client --fix"
+    },
     "postinstall": {
       "command": "nuxt prepare ./apps/client"
     },

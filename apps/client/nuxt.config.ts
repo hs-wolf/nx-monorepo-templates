@@ -46,6 +46,7 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@formkit/auto-animate/nuxt",
     "@nuxt/image",
+    "@nuxt/eslint",
   ],
   tailwindcss: {
     viewer: false,
