@@ -17,9 +17,11 @@
       "command": "nuxt dev ./apps/client"
     },
     "build": {
+      "dependsOn": ["lint"],
       "command": "nuxt build ./apps/client"
     },
     "generate": {
+      "dependsOn": ["lint"],
       "command": "nuxt generate ./apps/client && rm -rf ./apps/client/dist"
     },
     "preview": {
