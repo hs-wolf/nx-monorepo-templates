@@ -11,6 +11,7 @@
     "sass": "^1.77.8"
   },
   "dependencies": {
+    "@formkit/auto-animate": "^0.8.2",
     "@nuxtjs/i18n": "^8.3.1",
     "@pinia/nuxt": "^0.5.1",
     "@vueuse/core": "^10.11.0",

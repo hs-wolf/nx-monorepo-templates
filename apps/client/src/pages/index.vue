@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center">
+  <div class="flex flex-col items-center gap-2">
     <h1 class="font-bold">Available Modules</h1>
     <div>
       <p>Pinia</p>
@@ -21,6 +21,16 @@
         {{ locale.name }}
       </a>
     </div>
+    <div class="flex flex-col items-center">
+      <p>AutoAnimate</p>
+      <ul v-auto-animate class="flex justify-center gap-2 w-64">
+        <li v-for="item in items" :key="item">
+          <button @click.prevent="removeItem(item)">
+            {{ item }}
+          </button>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -29,6 +39,8 @@ import { useAlertStore } from "~/stores";
 
 const { t, locale, locales, setLocale } = useI18n();
 const alertStore = useAlertStore();
+
+const items = ref(["😏", "😐", "😑", "😒", "😕"]);
 
 useHead({ title: t("pages.home.title") });
 
@@ -39,6 +51,10 @@ onMounted(() => {
 const availableLocales = computed(() => {
   return locales.value.filter((i) => i.code !== locale.value);
 });
+
+function removeItem(toRemove: string) {
+  items.value = items.value.filter((item) => item !== toRemove);
+}
 </script>
 
 <style scoped></style>
