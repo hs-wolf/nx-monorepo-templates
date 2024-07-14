@@ -23,7 +23,7 @@ This repository aims to provide a variety of templates to help you kickstart you
 
 #### Choose the template that best fits your project requirements.
 
-- [barebones](https://github.com/hs-wolf/nx-monorepo-templates/tree/barebones): A simple barebones monorepo with no additional apps or libs.
+- <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="32"></a> [barebones](https://github.com/hs-wolf/nx-monorepo-templates/tree/barebones): A simple barebones monorepo with no additional apps or libs.
 - [express-server](https://github.com/hs-wolf/nx-monorepo-templates/tree/express-server): Monorepo containing a node express app configured with Tsoa and Swagger.
 - [nuxt3-app](https://github.com/hs-wolf/nx-monorepo-templates/tree/nuxt3-app): A Nuxt3 app with all basic necessities included like state management, localization, image manipulation and more.
 
