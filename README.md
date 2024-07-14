@@ -13,21 +13,21 @@ Nx provides a set of powerful tools for building and managing monorepo projects,
 - [Contributing](#contributing)
 - [License](#license)
 
-## Introduction
+## <a name="introduction">Introduction</a>
 
 [Nx](https://nx.dev/) is a set of extensible dev tools for monorepos, enabling efficient development workflows.
 
 This repository aims to provide a variety of templates to help you kickstart your projects with Nx, covering different types of applications and scenarios.
 
-## Available Templates
+## <a name="available-templates">Available Templates </a>
 
 #### Choose the template that best fits your project requirements.
 
-- <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="32"></a> [barebones](https://github.com/hs-wolf/nx-monorepo-templates/tree/barebones): A simple barebones monorepo with no additional apps or libs.
-- [express-server](https://github.com/hs-wolf/nx-monorepo-templates/tree/express-server): Monorepo containing a node express app configured with Tsoa and Swagger.
-- [nuxt3-app](https://github.com/hs-wolf/nx-monorepo-templates/tree/nuxt3-app): A Nuxt3 app with all basic necessities included like state management, localization, image manipulation and more.
+- <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="16"></a> [barebones](https://github.com/hs-wolf/nx-monorepo-templates/tree/barebones): A simple barebones monorepo with no additional apps or libs.
+- <a alt="Nx logo" href="https://expressjs.com" target="_blank" rel="noreferrer"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968322.png" width="16"></a> [express-server](https://github.com/hs-wolf/nx-monorepo-templates/tree/express-server): Monorepo containing a node express app configured with Tsoa and Swagger.
+- <a alt="Nx logo" href="https://nuxt.com" target="_blank" rel="noreferrer"><img src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3254151/nuxt-icon-icon-original.svg" width="16"></a> [nuxt3-app](https://github.com/hs-wolf/nx-monorepo-templates/tree/nuxt3-app): A Nuxt3 app with all basic necessities included like state management, localization, image manipulation and more.
 
-## Getting Started
+## <a name="getting-started">Getting Started</a>
 
 #### To get started, follow these steps:
 
@@ -49,17 +49,17 @@ This repository aims to provide a variety of templates to help you kickstart you
    cd nx-monorepo-templates
    ```
 
-## Usage (work in progress)
+## <a name="usage">Usage (work in progress)</a>
 
 Each template comes with its own set of instructions on how to use and customize it.
 
 Refer to the README file inside each template directory for detailed usage guidelines.
 
-## Contributing
+## <a name="usage">Contributing</a>
 
 I welcome contributions! If you have a new template to add or improvements to existing ones, please let me know.
 
-## License
+## <a name="usage">License</a>
 
 This project is licensed under the MIT License.
 
