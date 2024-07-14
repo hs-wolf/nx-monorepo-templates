@@ -49,7 +49,7 @@ This repository aims to provide a variety of templates to help you kickstart you
    cd nx-monorepo-templates
    ```
 
-## Usage
+## Usage (work in progress)
 
 Each template comes with its own set of instructions on how to use and customize it.
 
@@ -57,7 +57,7 @@ Refer to the README file inside each template directory for detailed usage guide
 
 ## Contributing
 
-We welcome contributions! If you have a new template to add or improvements to existing ones, please follow our contribution guidelines.
+I welcome contributions! If you have a new template to add or improvements to existing ones, please let me know.
 
 ## License
 
