@@ -31,6 +31,11 @@
         </li>
       </ul>
     </div>
+    <div class="flex flex-col items-center">
+      <p>NuxtImage</p>
+      <NuxtImg src="/spaghetti.jpg" />
+      <NuxtImg preset="avatar" src="/noice.jpg" />
+    </div>
   </div>
 </template>
 
