@@ -12,7 +12,7 @@
         "outputPath": "dist/libs/models",
         "main": "libs/models/src/index.ts",
         "tsConfig": "libs/models/tsconfig.lib.json",
-        "assets": [],
+        "assets": ["libs/models/*.md"],
         "format": ["cjs"]
       }
     }

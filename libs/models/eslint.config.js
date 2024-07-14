@@ -25,10 +25,11 @@ module.exports = [
     ...config,
     files: ['**/*.json'],
     rules: {
-      ...config.rules,
       '@nx/dependency-checks': [
         'error',
-        { ignoredFiles: ['{projectRoot}/esbuild.config.{js,ts,mjs,mts}'] },
+        {
+          ignoredFiles: ['{projectRoot}/esbuild.config.{js,ts,mjs,mts}'],
+        },
       ],
     },
   })),
