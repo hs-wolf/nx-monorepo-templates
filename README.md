@@ -23,7 +23,6 @@ This repository aims to provide a variety of templates to help you kickstart you
 
 #### Choose the template that best fits your project requirements.
 
-- <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="16"></a> [barebones](https://github.com/hs-wolf/nx-monorepo-templates/tree/barebones): A simple barebones monorepo with no additional apps or libs.
 - <a alt="Nx logo" href="https://expressjs.com" target="_blank" rel="noreferrer"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968322.png" width="16"></a> [express-server](https://github.com/hs-wolf/nx-monorepo-templates/tree/express-server): Monorepo containing a node express app configured with Tsoa and Swagger.
 - <a alt="Nx logo" href="https://nuxt.com" target="_blank" rel="noreferrer"><img src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3254151/nuxt-icon-icon-original.svg" width="16"></a> [nuxt3-app](https://github.com/hs-wolf/nx-monorepo-templates/tree/nuxt3-app): A Nuxt3 app with all basic necessities included like state management, localization, image manipulation and more.
 - <img src="https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/stack-512.png" width="16"> [fullstack](https://github.com/hs-wolf/nx-monorepo-templates/tree/fullstack): Combines the express-server and the nuxt3-app for a fullstack application with shared libraries.
