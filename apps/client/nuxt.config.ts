@@ -62,13 +62,13 @@ export default defineNuxtConfig({
       {
         name: 'English',
         code: 'en',
-        iso: 'en-US',
+        language: 'en-US',
         file: 'en.yaml',
       },
       {
         name: 'Português',
         code: 'pt',
-        iso: 'pt-BR',
+        language: 'pt-BR',
         file: 'pt.yaml',
       },
     ],
