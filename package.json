@@ -4,9 +4,8 @@
   "license": "MIT",
   "scripts": {},
   "private": true,
-  "dependencies": {},
   "devDependencies": {
-    "@nx/workspace": "19.4.3",
-    "nx": "19.4.3"
+    "@nx/workspace": "19.6.2",
+    "nx": "19.6.2"
   }
 }
