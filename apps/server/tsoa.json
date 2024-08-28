@@ -1,0 +1,17 @@
+{
+  "entryFile": "apps/server/src/main.ts",
+  "noImplicitAdditionalProperties": "throw-on-extras",
+  "controllerPathGlobs": ["apps/server/src/**/*Controller.ts"],
+  "spec": {
+    "outputDirectory": "apps/server/generated",
+    "specVersion": 3
+  },
+  "routes": {
+    "routesDir": "apps/server/generated"
+  },
+  "compilerOptions": {
+    "paths": {
+      "@nx-monorepo-templates/models": ["libs/models/src/index.ts"]
+    }
+  }
+}
