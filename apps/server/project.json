@@ -6,7 +6,7 @@
   "tags": [],
   "targets": {
     "build": {
-      "dependsOn": ["lint"],
+      "dependsOn": ["lint", "build-tsoa"],
       "executor": "@nx/esbuild:esbuild",
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
@@ -23,6 +23,9 @@
           "sourcemap": true,
           "outExtension": {
             ".js": ".js"
+          },
+          "loader": {
+            ".json": "copy"
           }
         }
       },
@@ -30,15 +33,13 @@
         "development": {},
         "production": {
           "esbuildOptions": {
-            "sourcemap": false,
-            "outExtension": {
-              ".js": ".js"
-            }
+            "sourcemap": false
           }
         }
       }
     },
     "serve": {
+      "dependsOn": ["build-tsoa"],
       "executor": "@nx/js:node",
       "defaultConfiguration": "development",
       "options": {
@@ -52,6 +53,12 @@
           "buildTarget": "server:build:production"
         }
       }
+    },
+    "build-tsoa": {
+      "command": "tsoa spec-and-routes -c=apps/server/tsoa.json"
+    },
+    "watch-tsoa": {
+      "command": "conc \"nx run server:serve\" \"nodemon --config apps/server/nodemon.json\""
     }
   }
 }

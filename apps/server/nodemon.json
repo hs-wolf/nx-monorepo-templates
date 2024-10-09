@@ -1,0 +1,5 @@
+{
+  "exec": "nx run server:build-tsoa",
+  "watch": ["apps/server/src", "libs/models"],
+  "ext": "ts"
+}
