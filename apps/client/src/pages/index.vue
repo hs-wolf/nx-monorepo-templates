@@ -12,12 +12,7 @@
     </div>
     <div class="flex items-center gap-2">
       <p>i18n</p>
-      <a
-        v-for="l in availableLocales"
-        :key="l.code"
-        href="#"
-        @click.prevent="setLocale(l.code)"
-      >
+      <a v-for="l in availableLocales" :key="l.code" href="#" @click.prevent="setLocale(l.code)">
         {{ l.name }}
       </a>
     </div>
@@ -35,6 +30,10 @@
       <p>NuxtImage</p>
       <NuxtImg src="/spaghetti.jpg" />
       <NuxtImg preset="avatar" src="/noice.jpg" />
+    </div>
+    <div class="flex flex-col items-center">
+      <p>Nuxt Icons</p>
+      <Icon name="custom:cube" />
     </div>
     <h1 class="font-bold">Monorepo Shared Libs</h1>
     <div class="flex flex-col items-center">

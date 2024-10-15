@@ -13,24 +13,15 @@ export default defineNuxtConfig({
   },
   nitro: {
     output: {
-      dir: resolve(
-        dirname(fileURLToPath(import.meta.url)),
-        '../../dist/apps/client/.output'
-      ),
+      dir: resolve(dirname(fileURLToPath(import.meta.url)), '../../dist/apps/client/.output'),
     },
   },
   vite: {
-    cacheDir: resolve(
-      dirname(fileURLToPath(import.meta.url)),
-      '../../node_modules/.vite'
-    ),
+    cacheDir: resolve(dirname(fileURLToPath(import.meta.url)), '../../node_modules/.vite'),
   },
   workspaceDir: resolve(dirname(fileURLToPath(import.meta.url)), '../../'),
   alias: {
-    '@nx-monorepo-templates/models': resolve(
-      dirname(fileURLToPath(import.meta.url)),
-      '../../libs/models/src'
-    ),
+    '@nx-monorepo-templates/models': resolve(dirname(fileURLToPath(import.meta.url)), '../../libs/models/src'),
   },
   app: {
     head: {
@@ -53,6 +44,7 @@ export default defineNuxtConfig({
     '@formkit/auto-animate/nuxt',
     '@nuxt/image',
     '@nuxt/eslint',
+    '@nuxt/icon',
   ],
   tailwindcss: {
     viewer: false,
@@ -101,5 +93,13 @@ export default defineNuxtConfig({
         },
       },
     },
+  },
+  icon: {
+    customCollections: [
+      {
+        prefix: 'custom',
+        dir: resolve(dirname(fileURLToPath(import.meta.url)), '../../apps/client/src/assets/icons'),
+      },
+    ],
   },
 });

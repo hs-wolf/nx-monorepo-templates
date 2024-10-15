@@ -2,11 +2,14 @@
   "name": "@nx-monorepo-templates/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "postinstall": "nuxt prepare ./apps/client"
+  },
   "private": true,
   "devDependencies": {
     "@eslint/eslintrc": "^2.1.4",
     "@nuxt/eslint": "^0.3.13",
+    "@nuxt/icon": "^1.5.6",
     "@nuxtjs/tailwindcss": "^6.12.1",
     "@nx/esbuild": "19.6.2",
     "@nx/eslint": "19.6.2",
