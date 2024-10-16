@@ -44,6 +44,7 @@ export default defineNuxtConfig({
     '@formkit/auto-animate/nuxt',
     '@nuxt/image',
     '@nuxt/eslint',
+    '@nuxt/icon',
   ],
   tailwindcss: {
     viewer: false,
@@ -92,5 +93,13 @@ export default defineNuxtConfig({
         },
       },
     },
+  },
+  icon: {
+    customCollections: [
+      {
+        prefix: 'custom',
+        dir: resolve(dirname(fileURLToPath(import.meta.url)), '../../apps/client/src/assets/icons'),
+      },
+    ],
   },
 });
